@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root {
+    --gold: #EFC69B;
+    --red: #AF1B3F;
+    --dark_color: #473144;
+    --body_font: Helvetica, Arial, sans-serif;
+    --header-font: Lora, Impact, serif;
+    --page-width: 940px;
+}
+
+h1 {
+    font-family: var(--header-font);
+    color: var(--dark_color);
+    text-align: center;
+
+}
+
+h2 {
+    color: var(--red);
+    font-family: var(--header-font);
+}
+
+body {
+    font-family: var(--body_font);
+    padding: 0;
+    margin: 0;
+    }
+
+img {
+    width: 200px;
+    margin-left: 1.5em;
+}
+footer {
+    text-align: center;
+    margin: 2em;
+}
+
+
+.menu-container {
+    display: grid;
+    justify-content: end;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: auto;
+    max-width: var(--page-width);
+}
+.lines {
+    width: 100%;
+    border: .1em solid var(--gold);
+    border-right: 0;
+    border-left: 0;
+}
+
+    .menu {
+        display: grid; /* Make the list items horizontal */
+        grid-template-columns: 1fr 1fr 1fr;
+        list-style: none; /* Remove bullet points */
+        margin: auto;
+        padding: 0;
+        padding-right: 1.5rem;
+
+      }
+
+
+.menu li {
+    margin-left: 20px; /* Adds space between menu items */
+  }
+
+.menu a {
+    text-decoration: none; /* Remove underline from links */
+    color: var(--red); /* Change link color */
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+
+
+.content-wrap {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: auto;
+    max-width: var(--page-width);
+
+}
+
+.filters {
+    border: .1em solid var(--gold);
+    margin: 2em;
+}
+
+.book {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.book-data {
+    align-self: self-end;
+}
+.info {
+    margin: 2em;
+}
+
+.skiptocontent a {
+    position: absolute;
+    top: -40px;
+}
+.skiptocontent a:focus {
+    top: 0;
+}
+
