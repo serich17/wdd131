@@ -25,6 +25,7 @@ function participantTemplate() {
     document.querySelector('fieldset').insertBefore(copyHTML, button)
 }
 
+
 function submitForm(event) {
     event.preventDefault()
     let totalFee = totalFees()
