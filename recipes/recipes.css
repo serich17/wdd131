@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root {
+    --primary-color: #1B98E0;
+    --secondary-color: #59c3c3;
+    --text-dark: #333;
+    --text-light: #ebebeb;
+    --primary-font: Arial, Helvetica,sans-serif;
+    --secondary-font: "Amatic SC";
+    }
+
+
+
+body {
+    max-width: 940px;
+    margin: 0 auto;
+    font-family: var(--primary-font);
+    color: var(--text-dark);
+}
+header {
+    border-bottom: .3px solid black;
+    padding: 1em 0;
+    margin: 0 1em;
+}
+
+h1, h2 {
+    font-family: var(--secondary-font);
+}
+h2, #attribution {
+    color: var(--primary-color);
+}
+h2 {
+    font-size: 2em;
+    margin: .5em 0 0 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+}
+form div {
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 2em;
+}
+footer a {
+    text-decoration: none;
+}
+
+section {
+    width: auto;
+    margin: 1em 2em;
+    padding: 1.3em;
+    border: 2px solid black;
+    border-radius: .3em;
+    display: flex;
+    flex-direction: row;
+}
+section img {
+    width: 300px;
+}
+img {
+    max-width: 100%;
+}
+
+.header-icon {
+    width: 50px;
+}
+
+.search-div {
+    width: auto;
+    padding: 0 1em;
+    display: flex;
+    flex-direction: row;
+}
+
+.img-btn img {
+    width: 2em;
+}
+.img-btn {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 0 .3em .3em 0;
+}
+.img-btn:hover {
+    cursor: pointer;
+}
+.social {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    
+}
+.social * {
+    width: 40px;
+}
+
+.tags {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.tags * {
+    padding: 5px;
+    margin-right: .4em;
+    margin-bottom: .4em;
+    border: 1px solid black;
+    border-radius: .1em;
+}
+
+.recipe-info {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1em;
+}
+
+
+#attribution {
+    font-size: 0.6em;
+}
+
+#search {
+    width: 100%;
+    font-size: 1.1em;
+    border-radius: .3em 0 0 .3em;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    footer {
+        flex-direction: column-reverse;
+        padding: 10px;
+    }
+    section {
+        flex-direction: column;
+    }
+    .recipe-info {
+        margin: 1em 0;
+    }
+    section img {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 960px) and (min-width: 600px) {
+    section img {
+        width: 250px;
+    }
+}
+
+
+
+
+
