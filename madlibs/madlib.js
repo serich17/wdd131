@@ -107,6 +107,7 @@ async function startMadLib() {
       document.querySelector(".getValues").style.display = "none"
       const storyView = document.createElement("div")
       storyView.classList.add("getValues")
+      storyView.id = "story-class"
       const header = document.createElement("h3")
       header.innerText = json[libIndex].name
       storyView.appendChild(header)

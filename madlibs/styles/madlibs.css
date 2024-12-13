@@ -265,7 +265,7 @@ h1 {
 .flex-box {
   display: flex;
   flex-direction: column;
-  align-items: end;
+  align-items: center;
   width: 50%;
   margin: 1em auto;
 }
@@ -286,5 +286,17 @@ h1 {
   .random-div {
       flex-direction: column; /* Stacks content vertically */
       gap: 1.5rem; /* Adjusts spacing for vertical layout */
+  }
+
+  .inputs {
+    flex-direction: column;
+  }
+  .inputs *, .inputs input {
+    width: 100%;
+  }
+
+  #story-class {
+    margin: .5em;
+    width: 350px;
   }
 }
