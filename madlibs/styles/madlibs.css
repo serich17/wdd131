@@ -83,19 +83,30 @@ header {
     margin: 0 auto;
 }
 .random-div {
-  display: flex;
+  /* display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  top: 50%; /* Center vertically */
-  left: 50%; /* Center horizontally */
+  top: 50%; 
+   left: 50%; 
   transform: translate(-50%, -50%);
   width: 100%;
   color: var(--paragraph-color-on-color);
   font-size: 20px;
   
-  text-shadow: 2px 2px 5px rgba(101, 101, 101, 0.7);
+  text-shadow: 2px 2px 5px rgba(101, 101, 101, 0.7);  */
+
+
+  position: relative;
+  z-index: 1; /* Ensures content appears above the image */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Centers text horizontally */
+  gap: 1rem; /* Adds space between p and button */
+
 }
 .random-text {
   width: 370px;
@@ -131,7 +142,14 @@ header {
 
 .banner {
   position: relative;
-  margin-top: .5em;
+  /* margin-top: .5em; */
+
+  position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensures the zoomed-in image doesn't overflow */
+    height: 40vh;
 }
 
 h3 {
@@ -141,8 +159,8 @@ h3 {
 }
 
 .getValues {
-  width: 50%;
-  margin: 1em auto;
+  width: 100%;
+  margin: 0;
   padding: 3em;
   border: 3px solid black;
   border-radius: 1em;
@@ -181,14 +199,25 @@ h1 {
   border-radius: 1em 1em;
 
   box-shadow: 5px 5px 5px rgb(111, 111, 111);
-  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%; /* Ensures the image covers the width */
+  height: auto; /* Maintains the aspect ratio */
+  transition: transform 0.5s ease;
 }
+
+
 
 .madLibOptions {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
   justify-content: space-evenly;
+}
+.madLibOptions div {
+  margin: .3em;
 }
 
 .minDisplay {
@@ -216,7 +245,46 @@ h1 {
   border-radius: 1em;
   box-shadow: 5px 5px 5px rgb(99, 99, 99);
   }
+.getValues img {
+  max-width: 100%;
+  border-radius: 1em;
+  box-shadow: 5px 5px 5px rgb(99, 99, 99);
+}
+
+.story {
+  text-align: left;
+  font-size: 2em;
+  line-height: 1.3em;
+}
+
+.return-main {
+  width: 100px;
+  margin: 1em 0;
+}
+
+.flex-box {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: 50%;
+  margin: 1em auto;
+}
 
 
 
 
+
+@media (max-width: 768px) {
+  #banner-img {
+      transform: translate(-50%, -50%) scale(1.5); /* Zooms in the image */
+  }
+
+  #title {
+    display: none;
+  }
+
+  .random-div {
+      flex-direction: column; /* Stacks content vertically */
+      gap: 1.5rem; /* Adjusts spacing for vertical layout */
+  }
+}

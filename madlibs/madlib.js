@@ -78,6 +78,8 @@ function nextQuestion(i) {
             const button = document.querySelector(".button");
             button.addEventListener("click", () => {
               console.log("Button clicked!");
+              story = story.replace(`{${input.id}}`, input.value)
+              input.value = ""
               controller.abort(); 
               resolve(); // Resolve the promise when button is clicked
             }, {signal});
@@ -95,7 +97,41 @@ async function startMadLib() {
     for (let i=0; i< Object.keys(json[libIndex].inputs).length; i++) {
         await nextQuestion(i)
     }
+
+    document.querySelector(".inputs").removeChild(document.querySelector(".input"))
+    document.querySelector(".question").innerText = "Your MadLib is ready! click the button to view"
+    const button = document.querySelector(".button")
+     button.innerText = "Show Story!"
+
+     button.addEventListener("click", function() {
+      document.querySelector(".getValues").style.display = "none"
+      const storyView = document.createElement("div")
+      storyView.classList.add("getValues")
+      const header = document.createElement("h3")
+      header.innerText = json[libIndex].name
+      storyView.appendChild(header)
+      const pic = document.createElement("img")
+      pic.src = json[libIndex].image
+      storyView.appendChild(pic)
+      const storyText = document.createElement("p")
+      storyText.innerText = story
+      storyText.classList.add("story")
+      storyView.appendChild(storyText)
+      const main = document.querySelector(".flex-box")
+      main.appendChild(storyView)
+      const returnHome = document.createElement("button")
+      returnHome.classList.add("button", "return-main")
+      returnHome.innerText = "Return"
+      returnHome.addEventListener("click", function() {
+        window.location.href = "index.html"
+      })
+      main.appendChild(returnHome)
+      
+
+
+     })
     console.log("done")
+    console.log(story)
 
 
 }
@@ -103,7 +139,16 @@ async function startMadLib() {
 
 
 
+document.querySelector(".input").addEventListener("keypress", function(event) {
+  // Check if the Enter key is pressed (keyCode 13)
+  if (event.key === "Enter") {
+      // Prevent the default form submission behavior (if applicable)
+      event.preventDefault(); 
 
+      // Trigger the button click
+      document.querySelector(".button").click();
+  }
+});
 
 
 
