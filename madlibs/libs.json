@@ -1,41 +1,167 @@
-{
-    "madLibs": [
-      {
-        "title": "A Magical Forest Adventure",
-        "template": "Deep in the [adjective] forest, there lived a [adjective] [animal] named [name]. [Name] loved to [verb] near the [noun] every morning. One day, while exploring, [name] found a [adjective] [object]. It was glowing [color] and humming a [adjective] tune. When [name] touched it, they were transported to a [adjective] kingdom filled with [plural noun]. The king of the kingdom greeted them and said, 'Only a [adjective] [profession] like you can save us from the [adjective] [plural noun].' With courage and a trusty [object], [name] set out to save the kingdom, becoming a true [heroic title]."
-      },
-      {
-        "title": "An Unexpected Birthday Surprise",
-        "template": "My [adjective] birthday started just like any other day. I woke up to find a [adjective] [animal] sitting on my bed. It held a [object] in its [body part] and said, '[exclamation]! Follow me!' I quickly got dressed and followed it to the [place]. There, I found my friends [verb ending in 'ing'] and holding [plural noun]. They shouted, '[exclamation]! Happy birthday!' I couldn’t believe my eyes when I saw a [adjective] [vehicle] waiting for me. We all climbed aboard and drove to [place], where we spent the whole day [verb ending in 'ing'] and eating [plural noun]."
-      },
-      {
-        "title": "Journey to the Lost City",
-        "template": "Long ago, in the [adjective] deserts of [place], a group of [plural noun] searched for the lost city of [mythical place]. Their leader, a [adjective] [profession] named [name], carried an ancient map marked with [number] [plural noun]. The journey was [adjective] and filled with [plural noun]. After crossing the [adjective] dunes and battling a [adjective] [creature], they finally reached the entrance to the city. Inside, they found [adjective] treasures and a [adjective] [object] glowing with power. The [plural noun] celebrated their victory by [verb ending in 'ing'], but little did they know, their adventure was just beginning."
-      },
-      {
-        "title": "The Crazy Science Experiment",
-        "template": "In the [adjective] lab of Professor [name], a [adjective] experiment was underway. Using [plural noun], a [adjective] machine, and a [object], the professor tried to create a new type of [plural noun]. But something went wrong! The machine began [verb ending in 'ing'], and suddenly, [number] [plural noun] appeared, each wearing a [adjective] hat. They started [verb ending in 'ing'] all over the lab, knocking over [plural noun] and causing a [adjective] mess. The professor shouted, '[exclamation]! What have I done?' It took [number] hours and a lot of [noun] to fix everything, but in the end, it was [adjective]."
-      },
-      {
-        "title": "A Day on a Pirate Ship",
-        "template": "Ahoy, matey! My first day aboard the [adjective] pirate ship, the [ship name], was unforgettable. The captain, a [adjective] [profession] named [name], handed me a [object] and said, '[exclamation], let’s find that treasure!' We sailed through [adjective] waters filled with [plural noun]. Suddenly, a [adjective] storm hit, and we had to [verb] to keep the ship afloat. After hours of battling the storm, we spotted an island shaped like a [object]. Digging in the sand, we uncovered a chest filled with [plural noun]. The crew celebrated by [verb ending in 'ing'], and I felt like a true pirate."
-      },
-      {
-        "title": "A Robot Friend",
-        "template": "One day, while walking through the [place], I stumbled upon a [adjective] robot named [name]. [Name] had a [adjective] screen and wheels made of [plural noun]. It beeped and said, '[exclamation]! I need your help.' Together, we set out to find [plural noun] for its broken [body part]. Along the way, we encountered a [adjective] [animal] that tried to [verb] us, but [name] used its [adjective] laser to save the day. When we finally found the [plural noun], [name] thanked me by [verb ending in 'ing']. It was the start of a [adjective] friendship I’ll never forget."
-      },
-      {
-        "title": "A Visit to a Magical Library",
-        "template": "The library in [place] is unlike any other. When I opened a [adjective] book, a [adjective] portal appeared. I stepped inside and found myself in a [adjective] world filled with [plural noun]. Each book I opened brought me to a new [place]. In one story, I rode a [adjective] [animal] across a [adjective] desert. In another, I fought a [adjective] [creature] with a [object]. The librarian, a [adjective] [profession] named [name], said, '[exclamation], you’re a natural adventurer!' By the end of the day, I had visited [number] worlds and made memories I’ll never forget."
-      },
-      {
-        "title": "The Time Traveler’s Vacation",
-        "template": "With my [adjective] time machine, I decided to take a vacation to the [adjective] past. I first landed in [year], where I met a [adjective] [profession] named [name] who showed me [plural noun]. Next, I traveled to the [adjective] future, where people rode [plural noun] instead of cars and ate [plural noun] for every meal. On my last stop, I accidentally [verb, past tense] in [place] and caused a [adjective] disaster involving a [object]. Despite the chaos, my trip was [adjective], and I even brought back a [object] as a souvenir."
-      },
-      {
-        "title": "The Magical Potion Shop",
-        "template": "In the heart of [place] lies a [adjective] potion shop run by a [adjective] wizard named [name]. The shelves were filled with [plural noun] glowing in every color of the rainbow. '[Exclamation]!' said [name]. 'I need your help to make a [adjective] potion.' I gathered a [object], some [plural noun], and a drop of [liquid]. When we mixed them together, the potion started [verb ending in 'ing'] and turned [color]. '[Exclamation]!' shouted [name]. 'It’s perfect!' The potion gave me the power to [verb], and I used it to [verb] the [adjective] [creature] of [place]."
-      }
-    ]
+
+  {
+   "0" : {
+        "id" : "0",
+        "name": "Dream Vacation",
+        "description": "A story about your perfect vacation.",
+        "tags": ["Vacation", "Travel", "Adventure"],
+        "image": "./images/vacation.png",
+        "text": "I packed my {object1} and headed to {place1}. The weather was {adj1} and the views were {adj2}. I spent my days {activity1} and my nights {activity2}. On the last day, I found a {object2} that reminded me of {name1}. It was the most {adj3} trip ever!",
+        "inputs": [
+            { "id": "object1", "question": "Provide an object." },
+            { "id": "place1", "question": "Provide a place." },
+            { "id": "adj1", "question": "Provide an adjective." },
+            { "id": "adj2", "question": "Provide another adjective." },
+            { "id": "activity1", "question": "Provide an activity." },
+            { "id": "activity2", "question": "Provide another activity." },
+            { "id": "object2", "question": "Provide another object." },
+            { "id": "name1", "question": "Provide a name." },
+            { "id": "adj3", "question": "Provide a third adjective." }
+        ]
+    },
+    "1" : {
+        "id" : "1",
+        "name": "The Secret Recipe",
+        "description": "Create a story about an unusual recipe.",
+        "tags": ["Cooking", "Food", "Adventure"],
+        "image": "./images/recipe.png",
+        "text": "I mixed {ingredient1} with {ingredient2} and added a pinch of {ingredient3}. The result was {adj1}. I served it with {food1}, and everyone said it tasted like {name1}. The secret ingredient was {object1}. Who knew cooking could be so {adj2}!",
+        "inputs": [
+            { "id": "ingredient1", "question": "Provide an ingredient." },
+            { "id": "ingredient2", "question": "Provide another ingredient." },
+            { "id": "ingredient3", "question": "Provide a third ingredient." },
+            { "id": "adj1", "question": "Provide an adjective." },
+            { "id": "food1", "question": "Provide a food." },
+            { "id": "name1", "question": "Provide a name." },
+            { "id": "object1", "question": "Provide an object." },
+            { "id": "adj2", "question": "Provide another adjective." }
+        ]
+    },
+    "2" : {
+        "id" : "2",
+        "name": "Superhero Adventure",
+        "description": "Invent a superhero and their story.",
+        "tags": ["Superhero", "Adventure", "Action"],
+        "image": "./images/superhero.png",
+        "text": "One day, {name1} discovered a {object1} that gave them the ability to {superpower1}. They decided to use this power to protect {place1}. Armed with their {object2}, they fought against {name2}, who wanted to steal the {object1} for their own {adj1} plans. It was an {adj2} battle, but {name1} emerged victorious!",
+        "inputs": [
+            { "id": "name1", "question": "Provide a name." },
+            { "id": "object1", "question": "Provide an object." },
+            { "id": "superpower1", "question": "Provide a superpower." },
+            { "id": "place1", "question": "Provide a place." },
+            { "id": "object2", "question": "Provide another object." },
+            { "id": "name2", "question": "Provide another name." },
+            { "id": "adj1", "question": "Provide an adjective." },
+            { "id": "adj2", "question": "Provide another adjective." }
+        ]
+    },
+    "3" : {
+        "id" : "3",
+        "name": "Mystery in the Mansion",
+        "description": "Solve a thrilling mystery.",
+        "tags": ["Mystery", "Detective", "Thriller"],
+        "image": "./images/mansion.png",
+        "text": "Detective {name1} arrived at the mansion and found a {object1} lying on the {object2}. The butler said he saw {name2} near the {place1}. The detective used their {object3} to uncover the {adj1} truth: the culprit was {name3}, who wanted the {object1} for their own {adj2} reasons!",
+        "inputs": [
+            { "id": "name1", "question": "Provide a name." },
+            { "id": "object1", "question": "Provide an object." },
+            { "id": "object2", "question": "Provide another object." },
+            { "id": "name2", "question": "Provide another name." },
+            { "id": "place1", "question": "Provide a place." },
+            { "id": "object3", "question": "Provide another object." },
+            { "id": "adj1", "question": "Provide an adjective." },
+            { "id": "name3", "question": "Provide another name." },
+            { "id": "adj2", "question": "Provide another adjective." }
+        ]
+    },
+    "4" : {
+        "id" : "4",
+        "name": "Alien Encounter",
+        "description": "Tell a story about meeting an alien.",
+        "tags": ["Alien", "Sci-fi", "Adventure"],
+        "image": "./images/alien.png",
+        "text": "While walking in {place1}, I saw a {adj1} spaceship land in front of me. An alien named {name1} stepped out and handed me a {object1}. It told me it needed help finding its {object2}, which it lost while {activity1}. Together, we searched for hours until we found it near {place2}. The alien thanked me and said I was the most {adj2} human it had ever met!",
+        "inputs": [
+            { "id": "place1", "question": "Provide a place." },
+            { "id": "adj1", "question": "Provide an adjective." },
+            { "id": "name1", "question": "Provide a name." },
+            { "id": "object1", "question": "Provide an object." },
+            { "id": "object2", "question": "Provide another object." },
+            { "id": "activity1", "question": "Provide an activity." },
+            { "id": "place2", "question": "Provide another place." },
+            { "id": "adj2", "question": "Provide another adjective." }
+        ]
+    },
+    "5" : {
+        "id" : "5",
+        "name": "Pirate Adventure",
+        "description": "Write about a swashbuckling pirate tale.",
+        "tags": ["Pirates", "Adventure", "Ocean"],
+        "image": "./images/pirate.png",
+        "text": "Captain {name1} stood on the deck of the {object1}, staring at the horizon. 'Ahoy, mates! We set sail for {place1} in search of the legendary {object2}!' The crew cheered, but they were soon faced with a {adj1} storm and a battle with {name2}, the infamous pirate. In the end, they found the treasure and celebrated with {food1}.",
+        "inputs": [
+            { "id": "name1", "question": "Provide a name." },
+            { "id": "object1", "question": "Provide an object." },
+            { "id": "place1", "question": "Provide a place." },
+            { "id": "object2", "question": "Provide another object." },
+            { "id": "adj1", "question": "Provide an adjective." },
+            { "id": "name2", "question": "Provide another name." },
+            { "id": "food1", "question": "Provide a food." }
+        ]
+    },
+    "6" : {
+        "id" : "6",
+        "name": "Fairy Tale Adventure",
+        "description": "Create your own fairy tale.",
+        "tags": ["Fairy Tale", "Magic", "Adventure"],
+        "image": "./images/fairytale.png",
+        "text": "Once upon a time, in the kingdom of {place1}, there was a {adj1} prince/princess named {name1}. They discovered a {object1} that granted wishes. With the help of a {animal1}, they defeated the {adj2} villain, {name2}, and brought peace to the land. They celebrated with a grand feast of {food1}.",
+        "inputs": [
+            { "id": "place1", "question": "Provide a place." },
+            { "id": "adj1", "question": "Provide an adjective." },
+            { "id": "name1", "question": "Provide a name." },
+            { "id": "object1", "question": "Provide an object." },
+            { "id": "animal1", "question": "Provide an animal." },
+            { "id": "adj2", "question": "Provide another adjective." },
+            { "id": "name2", "question": "Provide another name." },
+            { "id": "food1", "question": "Provide a food." }
+        ]
+    },
+    "7" : {
+        "id" : "7",
+        "name": "Haunted House",
+        "description": "Create a spooky haunted house story.",
+        "tags": ["Halloween", "Horror", "Adventure"],
+        "image": "./images/halloween.png",
+        "text": "I entered the {adj1} house on {place1}. Inside, I found a {object1} glowing in the dark. Suddenly, {name1} appeared and warned me about the {adj2} ghost that haunted the {object2}. With my {object3}, I managed to escape, but I'll never forget that {adj3} night!",
+        "inputs": [
+            { "id": "adj1", "question": "Provide an adjective." },
+            { "id": "place1", "question": "Provide a place." },
+            { "id": "object1", "question": "Provide an object." },
+            { "id": "name1", "question": "Provide a name." },
+            { "id": "adj2", "question": "Provide another adjective." },
+            { "id": "object2", "question": "Provide another object." },
+            { "id": "object3", "question": "Provide another object." },
+            { "id": "adj3", "question": "Provide another adjective." }
+        ]
+    },
+    "8" : {
+        "id" : "8",
+        "name": "Time Travel",
+        "description": "Tell a story about traveling through time.",
+        "tags": ["Time Travel", "Sci-fi", "Adventure"],
+        "image": "./images/time.png",
+        "text": "I used my {object1} to travel back to {year1}. There, I met {name1}, who showed me a {object2} that changed history. We had to stop {name2} from using it for their {adj1} plans. After a {adj2} chase, we succeeded and returned to the present with a {object3} as a souvenir.",
+        "inputs": [
+            { "id": "object1", "question": "Provide an object." },
+            { "id": "year1", "question": "Provide a year." },
+            { "id": "name1", "question": "Provide a name." },
+            { "id": "object2", "question": "Provide another object." },
+            { "id": "name2", "question": "Provide another name." },
+            { "id": "adj1", "question": "Provide an adjective." },
+            { "id": "adj2", "question": "Provide another adjective." },
+            { "id": "object3", "question": "Provide another object." }
+        ]
+    }
+
   }
-  
