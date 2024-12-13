@@ -12,6 +12,8 @@ async function getData() {
   
  // Call the function to fetch the data
 let json
+let libIndex
+let story
 
 async function init() {
     json = await getData();
@@ -22,8 +24,8 @@ async function init() {
 
   function setup() {
     console.log("Next function is running now.");
-    document.querySelector(".button").addEventListener("click", nextQuestion)
-    
+    // document.querySelector(".button").addEventListener("click", nextQuestion)
+    console.log(Object.keys(json).length)
     const params = new URLSearchParams(window.location.search);
     let index = params.get("index");
     console.log(json)
@@ -31,10 +33,15 @@ async function init() {
     if (Object.keys(json).includes(index)) {
         console.log("yes")
         console.log(json[index])
+        libIndex = index
     } else {
         console.log("No")
+        libIndex = getRandomNumber(0, Object.keys(json).length - 1)
+        console.log(libIndex)
     }
-    console.log(index)
+
+    startMadLib()
+    console.log(json[libIndex].inputs)
 }
   function fetchData() {
     let fetchedData;
@@ -49,15 +56,49 @@ async function init() {
   });
   }
 
+  function getRandomNumber(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
 
 
-function nextQuestion() {
-    console.log(libs)
-    console.log(libs[index])
+function nextQuestion(i) {
+       return new Promise(resolve => {
+            const controller = new AbortController();
+            const signal = controller.signal;
+
+            const question = json[libIndex].inputs[i].question
+            const id = json[libIndex].inputs[i].id
+            console.log(question)
+            console.log(id)
+
+            const input = document.querySelector(".input")
+            input.id = id
+            const heading = document.querySelector(".question")
+            heading.innerText = question
+            const button = document.querySelector(".button");
+            button.addEventListener("click", () => {
+              console.log("Button clicked!");
+              controller.abort(); 
+              resolve(); // Resolve the promise when button is clicked
+            }, {signal});
+          });
+
 }
 
 
+async function startMadLib() {
+    story = json[libIndex].text
+    console.log(story)
 
+    console.log(Object.keys(json[libIndex].inputs).length)
+
+    for (let i=0; i< Object.keys(json[libIndex].inputs).length; i++) {
+        await nextQuestion(i)
+    }
+    console.log("done")
+
+
+}
 
 
 
