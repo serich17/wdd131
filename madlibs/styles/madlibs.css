@@ -286,6 +286,11 @@ h1 {
   .random-div {
       flex-direction: column; /* Stacks content vertically */
       gap: 1.5rem; /* Adjusts spacing for vertical layout */
+      
+    }
+  .random-div * {
+    width: auto;
+    margin: 0 auto;
   }
 
   .inputs {
@@ -299,4 +304,5 @@ h1 {
     margin: .5em;
     width: 350px;
   }
+
 }
