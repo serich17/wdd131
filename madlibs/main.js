@@ -27,6 +27,7 @@ function templateMadLib(madlib) {
     newh.innerText = madlib.name
     const newi = document.createElement("img")
     newi.src = madlib.image
+    newi.alt = "MadLib image"
     const newp = document.createElement("p")
     newp.innerText = madlib.description
     newDiv.appendChild(newh)

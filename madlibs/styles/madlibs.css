@@ -77,10 +77,13 @@ header {
               inset -50px 0 30px rgba(0, 0, 0, 0.5); /* Right side shadow */
 }
 
+
 .heading {
     display: flex;
     max-width: 1040px;
     margin: 0 auto;
+    align-items: center;
+    justify-content: center;
 }
 .random-div {
   /* display: flex;
@@ -192,6 +195,8 @@ h1 {
 
 #logo {
     margin: 0 auto 0 2em;
+    width: 80px;
+    height: 80px;
 }
 
 #banner-img {
@@ -236,12 +241,13 @@ h1 {
 }
 
 .minDisplay p {
-  font-family: var(--paragraph-background-color);
+  font-family: var(--paragraph-font);
   font-size: 1.5em;
 
 }
 .minDisplay img {
   max-width: 100%;
+  max-height: 100%;
   border-radius: 1em;
   box-shadow: 5px 5px 5px rgb(99, 99, 99);
   }
@@ -303,6 +309,14 @@ h1 {
   #story-class {
     margin: .5em;
     width: 100%;
+  }
+  main {}
+  .flex-box {
+    margin: auto;
+    width: 70%;
+  }
+  .getValues {
+    padding: 20px;
   }
 
 }
