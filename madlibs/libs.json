@@ -5,7 +5,7 @@
         "name": "Dream Vacation",
         "description": "A story about your perfect vacation.",
         "tags": ["Vacation", "Travel", "Adventure"],
-        "image": "./images/vacation.png",
+        "image": "./images/vacation.webp",
         "text": "I packed my {object1} and headed to {place1}. The weather was {adj1} and the views were {adj2}. I spent my days {activity1} and my nights {activity2}. On the last day, I found a {object2} that reminded me of {name1}. It was the most {adj3} trip ever!",
         "inputs": [
             { "id": "object1", "question": "Provide an object." },
@@ -24,7 +24,7 @@
         "name": "The Secret Recipe",
         "description": "Create a story about an unusual recipe.",
         "tags": ["Cooking", "Food", "Adventure"],
-        "image": "./images/recipe.png",
+        "image": "./images/recipe.webp",
         "text": "I mixed {ingredient1} with {ingredient2} and added a pinch of {ingredient3}. The result was {adj1}. I served it with {food1}, and everyone said it tasted like {name1}. The secret ingredient was {object1}. Who knew cooking could be so {adj2}!",
         "inputs": [
             { "id": "ingredient1", "question": "Provide an ingredient." },
@@ -42,7 +42,7 @@
         "name": "Superhero Adventure",
         "description": "Invent a superhero and their story.",
         "tags": ["Superhero", "Adventure", "Action"],
-        "image": "./images/superhero.png",
+        "image": "./images/superhero.webp",
         "text": "One day, {name1} discovered a {object1} that gave them the ability to {superpower1}. They decided to use this power to protect {place1}. Armed with their {object2}, they fought against {name2}, who wanted to steal the {object1} for their own {adj1} plans. It was an {adj2} battle, but {name1} emerged victorious!",
         "inputs": [
             { "id": "name1", "question": "Provide a name." },
@@ -60,7 +60,7 @@
         "name": "Mystery in the Mansion",
         "description": "Solve a thrilling mystery.",
         "tags": ["Mystery", "Detective", "Thriller"],
-        "image": "./images/mansion.png",
+        "image": "./images/mansion.webp",
         "text": "Detective {name1} arrived at the mansion and found a {object1} lying on the {object2}. The butler said he saw {name2} near the {place1}. The detective used their {object3} to uncover the {adj1} truth: the culprit was {name3}, who wanted the {object1} for their own {adj2} reasons!",
         "inputs": [
             { "id": "name1", "question": "Provide a name." },
@@ -79,7 +79,7 @@
         "name": "Alien Encounter",
         "description": "Tell a story about meeting an alien.",
         "tags": ["Alien", "Sci-fi", "Adventure"],
-        "image": "./images/alien.png",
+        "image": "./images/alien.webp",
         "text": "While walking in {place1}, I saw a {adj1} spaceship land in front of me. An alien named {name1} stepped out and handed me a {object1}. It told me it needed help finding its {object2}, which it lost while {activity1}. Together, we searched for hours until we found it near {place2}. The alien thanked me and said I was the most {adj2} human it had ever met!",
         "inputs": [
             { "id": "place1", "question": "Provide a place." },
@@ -97,7 +97,7 @@
         "name": "Pirate Adventure",
         "description": "Write about a swashbuckling pirate tale.",
         "tags": ["Pirates", "Adventure", "Ocean"],
-        "image": "./images/pirate.png",
+        "image": "./images/pirate.webp",
         "text": "Captain {name1} stood on the deck of the {object1}, staring at the horizon. 'Ahoy, mates! We set sail for {place1} in search of the legendary {object2}!' The crew cheered, but they were soon faced with a {adj1} storm and a battle with {name2}, the infamous pirate. In the end, they found the treasure and celebrated with {food1}.",
         "inputs": [
             { "id": "name1", "question": "Provide a name." },
@@ -114,7 +114,7 @@
         "name": "Fairy Tale Adventure",
         "description": "Create your own fairy tale.",
         "tags": ["Fairy Tale", "Magic", "Adventure"],
-        "image": "./images/fairytale.png",
+        "image": "./images/fairytale.webp",
         "text": "Once upon a time, in the kingdom of {place1}, there was a {adj1} prince/princess named {name1}. They discovered a {object1} that granted wishes. With the help of a {animal1}, they defeated the {adj2} villain, {name2}, and brought peace to the land. They celebrated with a grand feast of {food1}.",
         "inputs": [
             { "id": "place1", "question": "Provide a place." },
@@ -132,7 +132,7 @@
         "name": "Haunted House",
         "description": "Create a spooky haunted house story.",
         "tags": ["Halloween", "Horror", "Adventure"],
-        "image": "./images/halloween.png",
+        "image": "./images/halloween.webp",
         "text": "I entered the {adj1} house on {place1}. Inside, I found a {object1} glowing in the dark. Suddenly, {name1} appeared and warned me about the {adj2} ghost that haunted the {object2}. With my {object3}, I managed to escape, but I'll never forget that {adj3} night!",
         "inputs": [
             { "id": "adj1", "question": "Provide an adjective." },
@@ -150,7 +150,7 @@
         "name": "Time Travel",
         "description": "Tell a story about traveling through time.",
         "tags": ["Time Travel", "Sci-fi", "Adventure"],
-        "image": "./images/time.png",
+        "image": "./images/time.webp",
         "text": "I used my {object1} to travel back to {year1}. There, I met {name1}, who showed me a {object2} that changed history. We had to stop {name2} from using it for their {adj1} plans. After a {adj2} chase, we succeeded and returned to the present with a {object3} as a souvenir.",
         "inputs": [
             { "id": "object1", "question": "Provide an object." },
