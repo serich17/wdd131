@@ -260,6 +260,7 @@ h1 {
 @media (max-width: 768px) {
   #banner-img {
       transform: scale(1.5); /* Zooms in the image */
+      height: 40vh;
   }
   .banner {
     height: 40vh;
