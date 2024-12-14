@@ -191,7 +191,6 @@ h1 {
   left: 0;
   width: 100%; /* Ensures the image covers the width */
   height: auto; /* Maintains the aspect ratio */
-  transition: transform 0.5s ease;
 }
 
 
@@ -263,7 +262,7 @@ h1 {
       transform: scale(1.5); /* Zooms in the image */
   }
   .banner {
-    height: 20vh;
+    height: 40vh;
   }
 
 
