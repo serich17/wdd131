@@ -85,6 +85,10 @@ header {
     align-items: center;
     justify-content: center;
 }
+
+.heading a {
+  margin: 0 auto 0 2em;
+}
 .random-div {
   position: relative;
   z-index: 1; 
@@ -176,7 +180,6 @@ h1 {
 }
 
 #logo {
-    margin: 0 auto 0 2em;
     width: 80px;
     height: 80px;
 }
