@@ -75,7 +75,8 @@ function nextQuestion(i) {
             const button = document.querySelector(".button");
             button.addEventListener("click", () => {
               console.log("Button clicked!");
-              story = story.replace(`{${input.id}}`, input.value)
+              let pattern = new RegExp(`\\{${input.id}\\}`, "g");
+              story = story.replace(pattern, input.value)
               input.value = ""
               controller.abort(); 
               resolve(); // Resolve the promise when button is clicked
