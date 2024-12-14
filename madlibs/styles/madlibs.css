@@ -86,35 +86,18 @@ header {
     justify-content: center;
 }
 .random-div {
-  /* display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  position: absolute;
-  top: 50%; 
-   left: 50%; 
-  transform: translate(-50%, -50%);
-  width: 100%;
-  color: var(--paragraph-color-on-color);
-  font-size: 20px;
-  
-  text-shadow: 2px 2px 5px rgba(101, 101, 101, 0.7);  */
-
-
   position: relative;
-  z-index: 1; /* Ensures content appears above the image */
+  z-index: 1; 
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  text-align: center; /* Centers text horizontally */
-  gap: 1rem; /* Adds space between p and button */
-
+  text-align: center;
+  gap: 1rem;
 }
 .random-text {
   width: 370px;
   margin-left: 2em;
-  /* background-color: rgba(	255,	111,	97, .8); */
   background-color: rgba(46, 196, 182, .8);
   padding: 10px;
   border-radius: 1em 1em;
@@ -128,7 +111,6 @@ header {
   border-radius: 1em 1em;
   border: 0;
   height: 4em;
-  
   font-weight: bold;
   font-size: .8em;
   background-color: var(--accent1-color);
@@ -283,6 +265,9 @@ h1 {
 @media (max-width: 768px) {
   #banner-img {
       transform: translate(-50%, -50%) scale(1.5); /* Zooms in the image */
+  }
+  .banner {
+    height: 30vh;
   }
 
   #title {
