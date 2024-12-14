@@ -163,7 +163,7 @@ h3 {
 
 .getValues {
   width: 100%;
-  margin: 0;
+  margin: 1em 0;
   padding: 3em;
   border: 3px solid black;
   border-radius: 1em;
@@ -310,7 +310,9 @@ h1 {
     margin: .5em;
     width: 100%;
   }
-  main {}
+  #story-class p {
+    font-size: 1em;
+  }
   .flex-box {
     margin: auto;
     width: 70%;
