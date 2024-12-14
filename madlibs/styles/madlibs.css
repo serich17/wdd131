@@ -296,7 +296,7 @@ h1 {
     }
   .random-div * {
     width: auto;
-    margin: 0 auto;
+    margin: auto;
   }
 
   .inputs {
