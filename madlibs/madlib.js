@@ -21,7 +21,6 @@ async function init() {
 
     
   }
-
   function setup() {
     console.log("Next function is running now.");
     // document.querySelector(".button").addEventListener("click", nextQuestion)
@@ -60,7 +59,6 @@ async function init() {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
-
 function nextQuestion(i) {
        return new Promise(resolve => {
             const controller = new AbortController();
@@ -70,7 +68,6 @@ function nextQuestion(i) {
             const id = json[libIndex].inputs[i].id
             console.log(question)
             console.log(id)
-
             const input = document.querySelector(".input")
             input.id = id
             const heading = document.querySelector(".question")
@@ -86,7 +83,6 @@ function nextQuestion(i) {
           });
 
 }
-
 
 async function startMadLib() {
     story = json[libIndex].text
@@ -128,17 +124,10 @@ async function startMadLib() {
       })
       main.appendChild(returnHome)
       
-
-
      })
     console.log("done")
     console.log(story)
-
-
 }
-
-
-
 
 document.querySelector(".input").addEventListener("keypress", function(event) {
   // Check if the Enter key is pressed (keyCode 13)
@@ -150,8 +139,5 @@ document.querySelector(".input").addEventListener("keypress", function(event) {
       document.querySelector(".button").click();
   }
 });
-
-
-
 
 window.addEventListener("DOMContentLoaded", init); 

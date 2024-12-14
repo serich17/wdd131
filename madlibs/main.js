@@ -1,14 +1,9 @@
-
-
-
-
 function init() {
 
     fetch("./libs.json").then((res) => res.json()).then((json) => processJson(json))
 
     
   }
-
 
 function processJson(json) {
     const container = document.querySelector(".madLibOptions")
@@ -17,7 +12,6 @@ function processJson(json) {
     });
     
 }
-
 
 function templateMadLib(madlib) {
     const newDiv = document.createElement("div")
@@ -36,17 +30,11 @@ function templateMadLib(madlib) {
     newDiv.addEventListener("click", openPage)
     return newDiv
 
-    // return `<div class="minDisplay" id="${madlib.id}">
-    // <h2>${madlib.name}</h2>
-    // <img src="${madlib.image}"></img>
-    // <p>${madlib.description}</p>
-    // </div>`
 }
 
 function openPage(e) {
     console.log("enter")
     window.location.href = `madlib.html?index=${e.currentTarget.id}`;
 }
-
 
 window.addEventListener("DOMContentLoaded", init); 
